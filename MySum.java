@@ -33,12 +33,14 @@ public class MySum {
 		{
 			int comp = target - inputArray[i];
 			
+			tempMap.put(inputArray[i], i);
+			
 			if (tempMap.containsKey(comp))
 			{
 				outputMap.put(tempMap.get(comp), i);
 			}
 			
-			tempMap.put(inputArray[i], i);
+			
 		}
 		return outputMap;
 		
